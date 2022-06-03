@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  h1{
+    color: red;
+  }
+  .links{
+    display: none;
+    margin-left: auto;
+  }
+  a{
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+  }
+  a:hover{
+    color: red;
+  }
+}
+h1{
+  font-size: 36px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.play-button{
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: 1px #f2f2f2 solid;
+  min-width: 100px;
+  min-height: 50px;
+  background: Green;
+  color: #fff;
+  border-bottom: 6px rgb(0, 70, 0) solid;
+  border-right: 1px rgb(0, 70, 0) solid;
+  border-left: 1px rgb(0, 70, 0) solid;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover{
+    margin-top: 1px;
+    border: 0;
+  }
+}
+table{
+  margin: 0 auto;
+  td{
+    text-align: center;
+    border: 2px solid rgb(73, 73, 73);
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+  }
+  h2{
+    color: rgb(0, 78, 0);
+  }
+}
+.winner{
+  padding: 5px;
+  background-color: rgb(216, 255, 216);
+}
+.github-fork-ribbon:before{ 
+  background-color: #333; 
+}
+@media only screen and (max-width: 520px) {
+  .github-fork-ribbon{
+    display: none;
+  }
+  table{
+    td{
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
+@media only screen and (max-width: 444px) {
+  table{
+    td{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .navbar{
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  table{
+    td{
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
