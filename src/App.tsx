@@ -44,6 +44,7 @@ function App() {
     }
   }
   
+  
   const handlePlayAgain = () =>{
     setArray([
       "","","",
